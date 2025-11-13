@@ -27,6 +27,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Loading Animation -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+        </div>
+        <p class="loader-text">Loading Portfolio...</p>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Image Upload Modal -->
+    <div class="upload-modal" id="uploadModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Upload Project Images</h3>
+            <div class="upload-area" id="uploadArea">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Drag & drop images here or click to browse</p>
+                <input type="file" id="imageUpload" multiple accept="image/*" style="display: none;">
+            </div>
+            <div class="uploaded-images" id="uploadedImages"></div>
+            <button class="btn btn-primary" id="saveImages">Save Images</button>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -43,9 +73,10 @@
             </ul>
             <div class="nav-right">
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
                 </button>
-                <a href="BrianEscutiaResume2025.pdf" class="resume-btn" download>Resume</a>
+                <a href="#" class="resume-btn" id="resumeBtn">Resume</a>
+                <input type="file" id="resumeUpload" accept=".pdf" style="display: none;">
             </div>
             <div class="hamburger">
                 <span></span>
@@ -61,7 +92,7 @@
             <div class="hero-content">
                 <p class="hero-greeting fade-in">Hi, my name is</p>
                 <h1 class="hero-name fade-in">Brian Escutia</h1>
-                <h2 class="hero-title fade-in">I'm a <span class="gradient-text">Software Engineer</span></h2>
+                <h2 class="hero-title fade-in">I'm a <span class="gradient-text typing-text" id="typingText">Software Engineer</span></h2>
                 <p class="hero-subtitle fade-in">
                     Computer Science @ UC Davis | Building technology to create<br>
                     opportunities for underserved communities
