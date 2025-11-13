@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brian Escutia - Software Engineer | UC Davis Computer Science student building technology to create opportunities for underserved communities">
+    <meta name="keywords" content="Brian Escutia, Software Engineer, UC Davis, Full Stack Developer, React, Node.js, MongoDB">
+    <meta name="author" content="Brian Escutia">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Brian Escutia - Software Engineer">
+    <meta property="og:description" content="UC Davis CS senior specializing in full-stack development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brianescutia.com">
+    
+    <title>Brian Escutia - Software Engineer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-text">BE</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="BrianEscutiaResume2025.pdf" class="resume-btn" download>Resume</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting fade-in">Hi, my name is</p>
+                <h1 class="hero-name fade-in">Brian Escutia</h1>
+                <h2 class="hero-title fade-in">I'm a <span class="gradient-text">Software Engineer</span></h2>
+                <p class="hero-subtitle fade-in">
+                    Computer Science @ UC Davis | Building technology to create<br>
+                    opportunities for underserved communities
+                </p>
+                <div class="hero-buttons fade-in">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="BrianEscutiaResume2025.pdf" class="btn btn-outline" download>Download Resume</a>
+                </div>
+                <div class="hero-socials fade-in">
+                    <a href="https://github.com/brianescutia" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/brian-escutia" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:bescutia@ucdavis.edu" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="scroll-indicator">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About <span class="gradient-text">Me</span></h2>
+            <div class="about-content">
+                <div class="about-image fade-in">
+                    <div class="image-placeholder">BE</div>
+                </div>
+                <div class="about-text fade-in">
+                    <p>
+                        I'm a <span class="highlight">first-generation student</span> from Arvin, California, currently 
+                        pursuing Computer Science at UC Davis. My journey hasn't been traditional—I overcame academic 
+                        dismissal with a 1.0 GPA to achieve a <span class="highlight">3.8 recent GPA</span> through 
+                        dedication and rebuilding fundamentals from scratch.
+                    </p>
+                    <p>
+                        As a <span class="highlight">UC Davis CS senior</span> specializing in full-stack development, I 
+                        focus on the <span class="highlight">MERN stack</span> and building applications that make a real 
+                        impact. I'm passionate about creating technology that opens doors for underserved communities.
+                    </p>
+                    <p>
+                        Through roles as an <span class="highlight">EOP Peer Counselor</span> and 
+                        <span class="highlight">AISC Education Lead</span>, and by founding 
+                        <span class="highlight">Cownect</span> (serving 400+ users), I've combined my technical skills 
+                        with my commitment to helping others access opportunities.
+                    </p>
+                </div>
+            </div>
+            <div class="stats-container fade-in">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="stat-number">400+</h3>
+                    <p class="stat-label">Students Served</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="stat-number">1,000+</h3>
+                    <p class="stat-label">Platform Users</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="stat-number">45+</h3>
+                    <p class="stat-label">Students Mentored</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured <span class="gradient-text">Projects</span></h2>
+            <p class="section-subtitle fade-in">Building impactful solutions that serve real users and solve real problems</p>
+            
+            <div class="projects-grid">
+                <!-- Cownect Project -->
+                <div class="project-card fade-in">
+                    <div class="project-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="project-title">Cownect - AI-Powered Career Platform</h3>
+                    <p class="project-description">
+                        Career discovery platform serving 400+ UC Davis students with 1,000+ completed assessments. 
+                        Built with MERN stack, integrated OpenAI GPT-4 API for personalized career matching across 55 career paths.
+                    </p>
+                    <div class="project-stats">
+                        <p class="feature-item">Real-time features | Group management | Event calendar</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">Google OAuth</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/brianescutia/cownect" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TaxAssist Project -->
+                <div class="project-card fade-in">
+                    <div class="project-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="project-title">TaxAssist - AI Tax Preparation Platform</h3>
+                    <p class="project-description">
+                        Full-stack tax filing application integrating IRS Direct File API with React frontend and Node.js 
+                        backend. Features AI-powered document parsing using GPT-4 to automatically extract W-2 and 1099 data.
+                    </p>
+                    <div class="project-stats">
+                        <p class="feature-item">IRS API Integration | AES-256 Encryption | JWT Auth</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">IRS API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/brianescutia/taxassist" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Youphoria Project -->
+                <div class="project-card fade-in">
+                    <div class="project-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="project-title">Youphoria - Wellness App Backend</h3>
+                    <p class="project-description">
+                        Architected Firebase backend infrastructure including Cloud Functions, Firestore schema 
+                        with composite indexes, and real-time notification system for iOS wellness application.
+                    </p>
+                    <div class="project-stats">
+                        <p class="feature-item">Real-time features | Group management | Push notifications</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Cloud Functions</span>
+                        <span class="tech-tag">Firestore</span>
+                        <span class="tech-tag">React Native</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/brianescutia/youphoria" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">Technical <span class="gradient-text">Skills</span></h2>
+            <p class="section-subtitle fade-in">A comprehensive toolkit for building modern, scalable applications</p>
+            
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Languages</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>C++</li>
+                        <li>C</li>
+                        <li>SQL</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li>React</li>
+                        <li>React Native</li>
+                        <li>Tailwind CSS</li>
+                        <li>Vite</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Firebase</li>
+                        <li>RESTful APIs</li>
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                        <li>Firestore</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Platforms</h3>
+                    <ul class="skill-list">
+                        <li>Git</li>
+                        <li>VS Code</li>
+                        <li>Postman</li>
+                        <li>AWS</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="competencies fade-in">
+                <h3>Core Competencies</h3>
+                <div class="competency-tags">
+                    <span class="competency-tag">Full-Stack Development</span>
+                    <span class="competency-tag">API Design & Integration</span>
+                    <span class="competency-tag">Database Architecture</span>
+                    <span class="competency-tag">Cloud Computing</span>
+                    <span class="competency-tag">Agile Development</span>
+                    <span class="competency-tag">Version Control</span>
+                    <span class="competency-tag">UI/UX Design</span>
+                    <span class="competency-tag">Team Leadership</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title fade-in">Professional <span class="gradient-text">Experience</span></h2>
+            <p class="section-subtitle fade-in">Combining technical expertise with a passion for mentorship and community impact</p>
+            
+            <div class="timeline">
+                <!-- AI Research Fellow -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="company-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="experience-info">
+                                    <h3>AI Research Fellow</h3>
+                                    <p class="company">Handshake AI Solutions</p>
+                                    <p class="duration"><i class="far fa-calendar"></i> Oct 2024 - Nov 2025</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+                                </div>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Conducting research on AI applications in career development and job matching algorithms</li>
+                                <li>Developing machine learning models for personalized career recommendations</li>
+                                <li>Collaborating with cross-functional teams to integrate AI solutions into production systems</li>
+                            </ul>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">OpenAI API</span>
+                                <span class="tech-tag">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Analyst -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="company-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="experience-info">
+                                    <h3>Technology Analyst</h3>
+                                    <p class="company">Youphoria</p>
+                                    <p class="duration"><i class="far fa-calendar"></i> Aug 2024 - Present</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Davis, CA</p>
+                                </div>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Architected Firebase backend infrastructure with Cloud Functions and Firestore database schema</li>
+                                <li>Implemented real-time notification system and group management features for iOS wellness app</li>
+                                <li>Designed and optimized Firestore queries with composite indexes for improved performance</li>
+                            </ul>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Cloud Functions</span>
+                                <span class="tech-tag">Firestore</span>
+                                <span class="tech-tag">React Native</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Peer Counselor -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="company-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="experience-info">
+                                    <h3>Peer Counselor</h3>
+                                    <p class="company">Educational Opportunity Program</p>
+                                    <p class="duration"><i class="far fa-calendar"></i> July 2023 - Present</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> UC Davis</p>
+                                </div>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Mentor 45+ first-generation students through academic and personal challenges</li>
+                                <li>Facilitate workshops on academic success, time management, and career development</li>
+                                <li>Connect students with campus resources and advocate for underrepresented communities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python Instructor -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="company-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="experience-info">
+                                    <h3>Python Instructor</h3>
+                                    <p class="company">GoWell Education</p>
+                                    <p class="duration"><i class="far fa-calendar"></i> Summer 2024</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+                                </div>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Taught Python programming fundamentals to high school students in interactive online sessions</li>
+                                <li>Developed curriculum and coding exercises for students at various skill levels</li>
+                                <li>Fostered engaging learning environment with hands-on projects and real-world applications</li>
+                            </ul>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Curriculum Development</span>
+                                <span class="tech-tag">Online Teaching</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Let's <span class="gradient-text">Connect</span></h2>
+            <p class="section-subtitle fade-in">
+                I'm always open to discussing new opportunities, collaborations, or just<br>
+                chatting about technology and its potential to create positive change.
+            </p>
+            
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3><i class="fas fa-comment-dots"></i> Get in Touch</h3>
+                    <p>Whether you're a recruiter looking for passionate talent, or someone interested in collaborating on impactful projects, I'd love to hear from you!</p>
+                    
+                    <div class="contact-details">
+                        <a href="mailto:bescutia@ucdavis.edu" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">bescutia@ucdavis.edu</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/brian-escutia" target="_blank" class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <p class="contact-label">LinkedIn</p>
+                                <p class="contact-value">Connect with me</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/brianescutia" target="_blank" class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <p class="contact-label">GitHub</p>
+                                <p class="contact-value">View my code</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="quick-facts">
+                        <h4>Quick Facts</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Available for full-time roles starting Summer 2025</li>
+                            <li><i class="fas fa-check-circle"></i> Open to relocation nationwide</li>
+                            <li><i class="fas fa-check-circle"></i> Response time: Usually within 24 hours</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <form class="contact-form fade-in" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or opportunity..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Brian Escutia. Built with <span class="highlight">React</span> & <span class="highlight">Tailwind CSS</span></p>
+            <p class="footer-subtitle">Designed & Developed with passion for creating opportunities</p>
+            <div class="footer-socials">
+                <a href="https://github.com/brianescutia" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/brian-escutia" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:bescutia@ucdavis.edu" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
